@@ -5,6 +5,7 @@ function validatePassword(password) {
   let oneLowerCase = true
   let numVal = true
   let specChar = true
+  let arrPassword = password.split('')
 
   if (password.length >= 8) {
     eightChar = true
@@ -13,8 +14,6 @@ function validatePassword(password) {
   else {
     eightChar = false
   }
-
-  let arrPassword = password.split('')
 
   const specialChar = '!@#$%^&*()_+`~'
   let specialArray = []
